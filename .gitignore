@@ -1,0 +1,6 @@
+# Runtime and editor defaults
+*.swp
+*~
+.DS_Store
+.vscode/
+.cache/
