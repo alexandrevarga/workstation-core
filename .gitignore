@@ -7,3 +7,4 @@
 
 # Local Workspace Context & Roadmaps
 *.local.md
+.project-specs

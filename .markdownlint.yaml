@@ -1,0 +1,9 @@
+---
+# MarkdownLint Configuration Rules
+default: true
+
+# Disable MD013 (Line Length) for technical docs and ADRs
+MD013: false
+
+# Disable MD033 (Inline HTML) to allow CI badges and image tags
+MD033: false
