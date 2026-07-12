@@ -1,5 +1,8 @@
 # workstation-core
 
+[![Code Quality](https://github.com/alexandrevarga/workstation-core/actions/workflows/lint.yml/badge.svg)](https://github.com/alexandrevarga/workstation-core/actions/workflows/lint.yml)
+[![Fedora](https://img.shields.io/badge/Fedora-Workstation-294172?logo=fedora&logoColor=white)](https://fedoraproject.org/)
+
 > *"The menu is public, the recipe stays in the kitchen."*
 
 Automated state management and configuration for my primary SRE engineering environment.
