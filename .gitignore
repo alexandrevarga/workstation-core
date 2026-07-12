@@ -4,3 +4,6 @@
 .DS_Store
 .vscode/
 .cache/
+
+# Local Workspace Context & Roadmaps
+*.local.md
