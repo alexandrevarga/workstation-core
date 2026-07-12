@@ -2,6 +2,11 @@
 
 [![Code Quality](https://github.com/alexandrevarga/workstation-core/actions/workflows/lint.yml/badge.svg)](https://github.com/alexandrevarga/workstation-core/actions/workflows/lint.yml)
 [![Fedora](https://img.shields.io/badge/Fedora-Workstation-294172?logo=fedora&logoColor=white)](https://fedoraproject.org/)
+[![Podman](https://img.shields.io/badge/Podman-892CA0?logo=podman&logoColor=white)](https://podman.io/)
+[![Systemd](https://img.shields.io/badge/Systemd-black?logo=systemd)](https://systemd.io/)
+[![SELinux](https://img.shields.io/badge/SELinux-Enforcing-red)](https://github.com/SELinuxProject)
+[![GNU Make](https://img.shields.io/badge/GNU_Make-00A651?logo=gnu&logoColor=white)](https://www.gnu.org/software/make/)
+[![GNU Bash](https://img.shields.io/badge/GNU_Bash-4EAA25?logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 
 > *"The menu is public, the recipe stays in the kitchen."*
 
