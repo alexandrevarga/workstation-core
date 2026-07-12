@@ -15,3 +15,9 @@ Every single configuration, package, or alias injected here must prove its worth
 **OS:** Fedora Workstation (Vanilla base stabilized)
 **Status:** Architecture definition & local repository bootstrapping completed.
 **Next Step:** Designing the structural orchestration layer.
+
+## Documentation
+To understand the engineering principles and design decisions governing this repository, please review:
+- [Architecture & Design Principles](ARCHITECTURE.md)
+- [Engineering Roadmap](ROADMAP.md)
+- [Architecture Decision Records (ADRs)](docs/adr/)
