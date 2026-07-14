@@ -19,7 +19,7 @@ The provisioning lifecycle is orchestrated by **GNU Stow**, executed via `Makefi
 
 ## 4. Rationale
 
-To eliminate Day Zero bootstrap friction, this architecture is built upon the **Unix Philosophy**. 
+To eliminate Day Zero bootstrap friction, this architecture is built upon the **Unix Philosophy**.
 
 GNU Stow is a Perl utility available in the core repositories of Linux distributions. It performs a single task—symlink management—without requiring heavy external runtimes or templating engines. This guarantees the bootstrap process remains lightweight and fail-safe on a freshly formatted OS.
 
