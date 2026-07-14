@@ -6,7 +6,7 @@ The objective of v1.0 is to establish the baseline "Day Zero" orchestration engi
 *Note: This roadmap is a dynamic document. Each phase serves as a high-level epic and will be expanded with fine-grained technical tasks as implementation progresses.*
 
 - [x] **Phase 1: Architectural Foundation**
-  - Definition of `ARCHITECTURE.md` and consolidated Architecture Decision Records (ADRs 0001-0004).
+  - Definition of `ARCHITECTURE.md` and consolidated Architecture Decision Records (ADRs 0001-0005).
 - [x] **Phase 1.5: Enterprise Governance & CI/CD**
   - Main branch protection via GitHub Rulesets.
   - Automated Code Quality pipeline (MarkdownLint, ShellCheck, YamlLint).

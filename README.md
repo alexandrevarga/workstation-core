@@ -14,22 +14,22 @@ Automated state management and configuration for my primary SRE engineering envi
 
 ## Enterprise Rigor in a Single Node
 
-This repository orchestrates my primary production workstation. It is engineered with the strict operational standards typically reserved for distributed fleets. Practices such as Architecture Decision Records (ADRs), Zero-Trust boundaries, Continuous Integration (CI/CD), and Infrastructure as Code (IaC) are enforced at the local level to guarantee a resilient, predictable, and auditable engineering environment.
+This repository orchestrates my primary production workstation. It is engineered with operational standards used in distributed fleets. Practices such as Architecture Decision Records (ADRs), Zero-Trust boundaries, Continuous Integration (CI/CD), GitOps, Ephemeral Environments, and Infrastructure as Code (IaC) are enforced at the local level to provide a resilient, predictable, and auditable engineering environment.
 
 ## The Twin-Engine Architecture
 
 To guarantee Operational Security (OpSec) while maintaining an open-source footprint, this environment operates on a dual-repository model:
 
-- **The Menu (`workstation-core`):** This public repository. It serves as the transparent blueprint for the system, containing the architectural skeleton, unprivileged orchestration, and base configurations.
-- **The Kitchen (`local-overlay`):** A strictly private, external vault injected via late-binding. It contains the actual intellectual property, access tokens, offensive security tools, traditional project governance, and systemic LLM governance workflows (secure prompts, API routing, data sanitization).
+- **The Menu (`workstation-core`):** This public repository. It serves as the blueprint for the system, containing the architectural skeleton, unprivileged orchestration, and base configurations.
+- **The Kitchen (`local-overlay`):** A private, external vault injected via late-binding. It contains intellectual property, access tokens, offensive security tools, and systemic LLM Governance Operations (secure prompts, context sandboxing, data sanitization).
 
 ## Philosophy: Friction-Driven Workflow
 
-This repository does not aim to be a massive, blind one-click restoration script. It is built under a strict minimalist premise:
+This repository does not aim to be a one-click restoration script. It is built under a minimalist premise:
 
 > **Deploy Vanilla → Run & Observe → Identify Dealbreakers → Target & Intervene → Validate**
 
-Every single configuration, package, or alias injected here must prove its worth by solving a tangible friction point encountered during real-world usage. If a default OS setting doesn't actively create friction or betray the thinking process, it stays untouched.
+Every configuration, package, or alias injected here must prove its worth by solving a friction point encountered during real-world usage. If a default OS setting doesn't create friction or betray the thinking process, it stays untouched.
 
 *For an in-depth look at the technical rigor behind this decision, refer to [ADR 0004: Eventual Determinism via YAGNI](docs/adr/0004-eventual-determinism-via-yagni.md).*
 
@@ -38,6 +38,15 @@ Every single configuration, package, or alias injected here must prove its worth
 **OS:** Fedora Workstation (Vanilla base stabilized)
 **Status:** Architecture definition & local repository bootstrapping completed.
 **Next Step:** Designing the structural orchestration layer.
+
+## Usage Topology
+
+Deployment is abstracted through contextual `make` targets to allow both macro and atomic orchestration:
+
+```bash
+make core      # Bootstraps the base zero-trust environment
+make clean     # Safely removes all public symlinks and restores boundaries
+```
 
 ## Documentation
 
