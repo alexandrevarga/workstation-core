@@ -1,4 +1,4 @@
-# ADR 0003: Presentation Layer (GNOME Wayland)
+# ADR 0003: GNOME Wayland Presentation Layer
 
 **Status:** Accepted
 **Date:** 2026-07-11

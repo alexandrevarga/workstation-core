@@ -1,4 +1,4 @@
-# ADR 0004: Eventual Determinism via YAGNI (Friction-Driven Workflow)
+# ADR 0004: Friction-Driven Eventual Determinism via YAGNI
 
 **Status:** Accepted
 **Date:** 2026-07-12
