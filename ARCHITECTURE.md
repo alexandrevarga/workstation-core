@@ -4,19 +4,13 @@ This repository orchestrates a reproducible, disposable, and decoupled workstati
 
 ## 1. Deterministic State & Idempotency
 
-> *(Inspired by Martin Fowler's Infrastructure as Code)*
-
 Configuration drift is technical debt. The core workstation must be rebuildable from a vanilla operating system without cognitive overhead. Provisioning must be idempotent, allowing the orchestration layer to be executed without side effects. The host OS is treated as disposable cattle, not a pet.
 
-## 2. Cryptographic & Contextual Boundary (Zero-Trust)
-
-> *(Adapted from Twelve-Factor App: III. Config)*
+## 2. Zero-Trust Cryptographic and Contextual Boundary
 
 This repository contains unprivileged OS orchestration and structural blueprints. It acts as the public skeleton. Sensitive payloads, RBAC tokens, SSH/GPG keys, and operational security tooling are injected dynamically at runtime via **Late-Binding** from an air-gapped or encrypted external overlay (`local-overlay`). Secrets are decoupled from the public codebase.
 
-## 3. The Isolation Heuristic (Dependency Tiers)
-
-> *(Adapted from Twelve-Factor App: II. Dependencies)*
+## 3. Dependency Tier Isolation Heuristics
 
 Software dependencies are declared and categorized to prevent host environment corruption:
 

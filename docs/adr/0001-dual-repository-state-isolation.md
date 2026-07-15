@@ -17,8 +17,8 @@ An engineering workstation requires the execution of both generic environment co
 
 The workstation state is split into a **Twin-Engine Architecture**:
 
-1. **`workstation-core` (Public Repository):** Handles unprivileged OS orchestration, structural blueprints, and dependency management.
-2. **`local-overlay` (Private Vault):** An external, encrypted vault containing cryptographic keys, tokens, and sensitive scripts.
+1. **`workstation-core`:** The public repository handling unprivileged OS orchestration, structural blueprints, and dependency management.
+2. **`local-overlay`:** The private, encrypted vault containing cryptographic keys, tokens, and sensitive scripts.
 
 The `workstation-core` integrates with the `local-overlay` via **Late-Binding**. Configuration files in the core repository utilize conditional hooks that fall back if the overlay is absent.
 

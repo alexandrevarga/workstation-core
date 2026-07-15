@@ -2,7 +2,7 @@
 
 ## v1.0 (Minimum Viable Architecture)
 
-The objective of v1.0 is to establish the baseline "Day Zero" orchestration engine, minimizing cognitive load without introducing unnecessary complexity (YAGNI).
+The objective of v1.0 is to establish the baseline "Day Zero" orchestration engine, minimizing cognitive load through strict YAGNI execution.
 *Note: This roadmap is a dynamic document. Each phase serves as a high-level epic and will be expanded with fine-grained technical tasks as implementation progresses.*
 
 - [x] **Phase 1: Architectural Foundation**
@@ -24,4 +24,4 @@ The objective of v1.0 is to establish the baseline "Day Zero" orchestration engi
 
 ## v2.0 (Evolutionary State)
 
-- [ ] Transition presentation layer to a native Wayland Tiling Window Manager (e.g., Sway).
+- [ ] Transition presentation layer to a native Wayland Tiling Window Manager such as Sway.

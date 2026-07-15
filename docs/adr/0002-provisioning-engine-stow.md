@@ -1,4 +1,4 @@
-# ADR 0002: Provisioning Engine (GNU Stow)
+# ADR 0002: GNU Stow Provisioning Engine
 
 **Status:** Accepted
 **Date:** 2026-07-11
@@ -10,7 +10,7 @@ Configuration files reside in a version-controlled repository, but operating sys
 
 ## 2. Alternatives Considered
 
-* **Ansible / Chezmoi:** Provide robust state management but introduce unacceptable runtime dependencies (Python, Go binaries) to the Core Host OS, violating the Day Zero lightweight bootstrap requirement.
+* **Ansible / Chezmoi:** Provide robust state management but introduce unacceptable runtime dependencies like Python or Go binaries to the Core Host OS, violating the Day Zero lightweight bootstrap requirement.
 * **Custom Bash Symlink Scripts:** Writing custom `ln -s` loops requires re-implementing tree-folding and state-management logic from scratch. This introduces unnecessary maintenance overhead for a problem natively solved by GNU Stow, violating the YAGNI principle.
 
 ## 3. Decision
