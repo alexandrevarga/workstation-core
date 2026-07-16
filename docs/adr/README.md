@@ -19,12 +19,17 @@ graph TD
     ADR0002 --> ADR0005["ADR 0005: Hybrid Stow Orchestration"]
     ADR0005 --> ADR0003["ADR 0003: GNOME Wayland Presentation"]
 
+    %% Late-Binding / Security
+    ADR0001 --> ADR0007["ADR 0007: Late-Binding Path Obfuscation"]
+    ADR0007 --> ADR0005
+
     style ADR0004 fill:#1f2937,stroke:#374151,stroke-width:2px,color:#fff
     style ADR0001 fill:#1f2937,stroke:#374151,stroke-width:2px,color:#fff
     style ADR0006 fill:#111827,stroke:#4b5563,stroke-dasharray: 5 5,color:#d1d5db
     style ADR0002 fill:#111827,stroke:#4b5563,stroke-dasharray: 5 5,color:#d1d5db
     style ADR0005 fill:#030712,stroke:#6b7280,color:#9ca3af
     style ADR0003 fill:#030712,stroke:#6b7280,color:#9ca3af
+    style ADR0007 fill:#1f2937,stroke:#374151,stroke-width:2px,color:#fff
 ```
 
 ## ADR Index
@@ -37,3 +42,4 @@ graph TD
 | [0004](0004-eventual-determinism-via-yagni.md) | Friction-Driven YAGNI | 2026-07-12 | Accepted | Restricts configuration mapping strictly to elements causing workflow friction. |
 | [0005](0005-tiered-stow-orchestration.md) | Hybrid Stow Orchestration | 2026-07-12 | Accepted | Combines atomic directories with Make target orchestration. |
 | [0006](0006-stage-based-systemland-provisioning.md) | Stage-Based Systemland | 2026-07-15 | Accepted | Separates unprivileged user symlinks from elevated root operations. |
+| [0007](0007-late-binding-path-obfuscation.md) | Late-Binding Path Obfuscation | 2026-07-16 | Accepted | Decouples private path structures and enforces anonymous naming. |
